@@ -1,0 +1,38 @@
+#portfolio
+    background-color: #f8f9fa
+    .imgbox
+        position: relative
+        margin-top: 25px
+        img
+            transition: .78s
+        span
+            position: absolute
+            display: none
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            font-size: 120px
+            color: #f8f6f6
+        &:hover
+            background-color: #ffc800
+            img
+                opacity: .1
+                cursor: pointer
+            span
+                display: block
+                cursor: pointer
+    .text
+        text-align: center
+        background-color: #eae6e6
+        padding: 20px 0
+        h2
+            font-weight: 600
+            font-size: 30px
+            margin: 8px 0
+        h4
+            color: #6c757d
+            font-size: 18px
+
+    @media (max-width: 992px)
+        .imgbox
+            border-radius: 20px          
